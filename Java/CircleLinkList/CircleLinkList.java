@@ -144,16 +144,11 @@ public class CircleLinkList {
 
     void showForward() {
         Node temp = head;
-        /*for (int i = 1; i <= 5; i++) {
+
+        do {
             System.out.println(temp.number);
             temp = temp.next;
-        }*/
-        System.out.println(temp.number);
-        temp = temp.next;
-        while (temp != head) {
-            System.out.println(temp.number);
-            temp = temp.next;
-        }
+        } while(temp != head);
     }
 
     void showBackward() {
