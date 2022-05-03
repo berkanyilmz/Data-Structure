@@ -153,12 +153,11 @@ public class CircleLinkList {
 
     void showBackward() {
         Node temp = head.back;
-        System.out.println(temp.number);
-        temp = temp.back;
 
-        while (temp != head.back) {
+        do {
             System.out.println(temp.number);
             temp = temp.back;
-        }
+        } while(temp != head.back);
+    }
     }
 }
